@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Importer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Importer</h1>
+        <p>Create AI-generated summaries of FOSDEM events</p>
+        <p>
+            This demo uses the historical FOSDEM 2026 schedule.
+            Event dates are in the past.
+        </p>
+    </header>
+
+    <main>
+        <section aria-labelledby="import-heading">
+            <h2 id="import-heading">Import events</h2>
+            <p>
+                Import from the official FOSDEM schedule.
+                Events already saved will be skipped.
+            </p>
+            <p>
+                Each import checks the three latest events by start time.
+            </p>
+
+            <button id="import-button" type="button" disabled>
+                Import from FOSDEM
+            </button>
+
+            <p id="import-status" role="status">
+                Import controls are not connected yet.
+            </p>
+        </section>
+
+        <section aria-labelledby="events-heading" style="margin-top: 4rem;">
+            <h2 id="events-heading">Saved events</h2>
+
+            <p id="events-status" role="status">
+                Saved events are not connected yet.
+            </p>
+
+            <div id="events-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Source:
+            <a href="https://archive.fosdem.org/2026/schedule/">
+                FOSDEM 2026
+            </a>.
+            Content is available under
+            <a href="https://creativecommons.org/licenses/by/4.0/">
+                CC BY 4.0
+            </a>,
+            all events are credited.
+        </p>
+    </footer>
+    <script src="/app.js" defer></script>
+</body>
+
+</html>
