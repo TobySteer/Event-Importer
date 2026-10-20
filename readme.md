@@ -10,20 +10,16 @@ The Event Importer uses the FOSDEM 2026 schedule from 31/01/2026 - 01/02/2026
 ## Setup
 
 1.
-pnpm install --frozen-lockfile
+pnpm install
 
 2.
-Create the .env file int eh project root:
-PORT=3000
-MONGODB_URI=mongodb://127.0.0.1:27017/event-scraper-standalone
-GEMINI_API_KEY= *(Use your Gemini API key, I used a trial version)*
-GEMINI_MODEL=gemini-2.5-flash
+Create the .env file in the project root and copy .env.example to it
 
 3.
 pnpm typecheck
 pnpm build
+*MongoDB must be running*
 pnpm start
 
 4.
-*MongoDB must be running*
-Open the server and press 'import from FOSDEM'
+Open the webpage in your browser and press 'import from FOSDEM'
