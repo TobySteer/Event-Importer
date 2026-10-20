@@ -10,7 +10,7 @@ The Event Importer uses the FOSDEM 2026 schedule from 31/01/2026 - 01/02/2026
 ## Setup
 
 1.
-pnpm install --frozen-lockfile
+pnpm install
 
 2.
 Create the .env file in the project root and copy .env.example to it
